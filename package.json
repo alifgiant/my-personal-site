@@ -2,7 +2,6 @@
     "name": "my_site",
     "version": "1.0.0",
     "description": "alif gatsby site",
-    "main": "index.js",
     "author": "Muhammad Alif Akbar",
     "license": "UNLICENSED",
     "dependencies": {
