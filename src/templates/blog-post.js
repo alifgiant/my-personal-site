@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-const IndexPage = () => (
+const BlogPage = () => (
   <div>
     {/* <SEO title="Home" /> */}
     <h1>Hi people</h1>
@@ -14,4 +14,4 @@ const IndexPage = () => (
   </div>
 )
 
-export default IndexPage
+export default BlogPage

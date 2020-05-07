@@ -1,26 +1,26 @@
 ---
-title: asik
+templateKey: index-page
+title: mantul
 image: /images/uploads/dr-tauhid.jpeg
 heading: ds
-subheading: ds
+subheading: sss
 mainpitch:
-  title: sds
-  description: asd
-description: dss
+  title: as
+  description: dsdsa
+description: dasdas
 intro:
-  heading: dd
-  description: sss
-  blurbs: []
+  heading: dsds
+  description: sad
 main:
-  heading: aaa
-  description: aaaa
+  heading: sad
+  description: das
   image1:
-    alt: ads
     image: /images/uploads/dr-tauhid.jpeg
+    alt: dadas
   image2:
     image: /images/uploads/dr-tauhid.jpeg
-    alt: dss
+    alt: sdsd
   image3:
     image: /images/uploads/dr-tauhid.jpeg
-    alt: dss
+    alt: asdasd
 ---
