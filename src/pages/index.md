@@ -1,6 +1,6 @@
 ---
 templateKey: index-page
-image: https://www.gravatar.com/avatar/6f16a13c13154a4060cd0a9c88e9b078?s=200&d=monsterid&r=g
+image_url: https://www.gravatar.com/avatar/6f16a13c13154a4060cd0a9c88e9b078?s=200&d=monsterid&r=g
 full_name: Muhammad Alif Akbar
 description: Blog of whom love to learn new things and challenge himself.
 motto: '"Non est ad astra mollis e terris via" -Seneca'

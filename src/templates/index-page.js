@@ -1,6 +1,5 @@
 import React from "react";
 import { graphql } from "gatsby";
-import { useSiteMetadata } from "../utils/site-meta";
 import Layout from "../components/Layout";
 import BlogRoll from "../components/BlogRoll";
 
@@ -10,17 +9,15 @@ export const pageQuery = () => {
       markdownRemark(id: { eq: $id }) {
         id
         frontmatter {
-          title
+          full_name
+          cv
           description
-          date
-        }
-      }
-      allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/socmed/" } }) {
-        nodes {
-          frontmatter {
-            url
-            name
+          motto
+          image_url
+          socmed {
             icon
+            name
+            url
           }
         }
       }
@@ -30,19 +27,19 @@ export const pageQuery = () => {
   return page;
 };
 
-const createSocmed = ({ frontmatter: data }) => {
+const createSocmed = ({ icon, name, url }) => {
   return (
-    <div key={"socmed-" + data.name} className="uk-margin-small-right">
-      <a href={data.url}>
-        <i className="uk-icon-button" uk-icon={data.icon} />
+    <div key={"socmed-" + name} className="uk-margin-small-right">
+      <a href={url}>
+        <i className="uk-icon-button" uk-icon={icon} />
       </a>
     </div>
   );
 };
 
 const IndexPage = ({ data }) => {
-  const { author, description, motto } = useSiteMetadata();
-  const { markdownRemark: page, allMarkdownRemark: socmed } = data;
+  const { markdownRemark } = data;
+  const page = markdownRemark.frontmatter;
 
   return (
     <Layout>
@@ -51,7 +48,7 @@ const IndexPage = ({ data }) => {
           <div className="uk-flex uk-flex-center uk-flex-wrap">
             <div>
               <img
-                data-src="https://www.gravatar.com/avatar/6f16a13c13154a4060cd0a9c88e9b078?s=200&d=monsterid&r=g"
+                data-src={page.image_url}
                 uk-img=""
                 alt="Portfolios"
                 width="100"
@@ -61,18 +58,19 @@ const IndexPage = ({ data }) => {
             </div>
             <div className="alif profile">
               <div className="uk-text-large uk-text-bolder uk-text-center uk-text-left@s alif title">
-                {author}
+                {page.full_name}
               </div>
               <div className="uk-text-center uk-text-left@s alif subtitle">
-                {description}
+                {page.description}
               </div>
               <div className="uk-text-center uk-text-left@s uk-text-bolder uk-text-italic uk-margin-top alif subtitle">
-                {motto}
+                {page.motto}
               </div>
               <div className="uk-flex uk-flex-wrap uk-flex-center uk-flex-left@s uk-margin-small-top">
-                {socmed.nodes.map((val, i) => createSocmed(val))}
+                {page.socmed.map((val, i) => createSocmed(val))}
                 <a
                   className="uk-button uk-button-primary"
+                  href={page.cv}
                   style={{
                     borderRadius: "500px",
                     height: 38,
