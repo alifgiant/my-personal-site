@@ -14,6 +14,15 @@ media_folder: "src/images"
 public_folder: "/images/uploads"
 
 collections:
+  - name: "socmed"
+    label: "Socmed"
+    folder: "content/socmed"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Name", name: "name", widget: string}
+      - {label: "Url", name: "url", widget: string}
+      - {label: "Fontawesome Icon", name: "icon", widget: string}
   - name: "blog"
     label: "Blog"
     folder: "content/blog"

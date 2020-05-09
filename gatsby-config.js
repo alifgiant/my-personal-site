@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Alif Akbar Site`,
-    description: `My Personal Static Site`,
+    description: `Blog of whom love to learn new things and challenge himself.`,
+    motto: `"Non est ad astra mollis e terris via" -Seneca`,
     author: `Muhammad Alif Akbar`,
     site: `alifakbar.com`,
   },
@@ -79,6 +80,6 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
     `gatsby-plugin-netlify-cms`,
-    'gatsby-plugin-netlify', // make sure to keep it last in the array
+    "gatsby-plugin-netlify", // make sure to keep it last in the array
   ],
 };
