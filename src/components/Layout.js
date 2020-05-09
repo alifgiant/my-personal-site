@@ -17,16 +17,15 @@ const TemplateWrapper = ({ children }) => {
         <meta property="og:type" content="blog.blog" />
         <meta property="og:url" content="/" />
         <meta property="og:image" content={`${withPrefix("/")}favicon.png`} />s
-        <script
-          defer={true}
-          src="https://cdn.jsdelivr.net/npm/uikit@3.4.3/dist/js/uikit.min.js"
-        />
-        <script
-          defer={true}
-          src="https://cdn.jsdelivr.net/npm/uikit@3.4.3/dist/js/uikit-icons.min.js"
-        />
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.4.3/dist/js/uikit.min.js" />
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.4.3/dist/js/uikit-icons.min.js" />
       </Helmet>
       <div>{children}</div>
+      <footer>
+        <div className="uk-text-small uk-text-center uk-margin-bottom uk-text-muted	">
+          2020 © All rights reserved
+        </div>
+      </footer>
     </div>
   );
 };

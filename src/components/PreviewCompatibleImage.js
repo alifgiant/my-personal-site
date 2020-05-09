@@ -31,7 +31,15 @@ const PreviewCompatibleImage = ({ imageInfo }) => {
   }
 
   if (!!image && typeof image === "string")
-    return <img className="preview" style={imageStyle} src={image} alt={alt} />;
+    return (
+      <img
+        className="preview"
+        style={imageStyle}
+        data-src={image}
+        uk-img=""
+        alt={alt}
+      />
+    );
 
   return null;
 };

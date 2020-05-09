@@ -19,13 +19,18 @@ class BlogRoll extends React.Component {
             <article
               className={post.frontmatter.featuredpost ? "is-featured" : ""}
             >
-              <div className="post-meta">
-                <span className="uk-text-uppercase uk-text-bold uk-text-emphasis">
+              <div>
+                <span
+                  className="uk-text-uppercase uk-text-small"
+                  style={{
+                    color: "#1f1f1fs",
+                  }}
+                >
                   {post.frontmatter.date}
                 </span>
                 {post.frontmatter.tags.map((tag) => (
                   <Link
-                    className="uk-text-uppercase uk-text-bold uk-margin-medium-left"
+                    className="uk-text-uppercase uk-text-small uk-margin-small-left"
                     key={tag}
                     to={"/tags/" + tag.toLowerCase()}
                   >
@@ -33,11 +38,11 @@ class BlogRoll extends React.Component {
                   </Link>
                 ))}
               </div>
-              <div className="uk-text-lead uk-text-bolder uk-margin-small-top">
+              <div className="uk-margin-small-top">
                 <Link
-                  className="uk-text-uppercase uk-text-bold"
+                  className="uk-text-uppercase uk-text-lead uk-text-bold uk-text-bold"
                   style={{
-                    color: "#000000",
+                    color: "#0e0e0e",
                   }}
                   to={post.fields.slug}
                 >
@@ -54,14 +59,19 @@ class BlogRoll extends React.Component {
                   />
                 </div>
               ) : null}
-              <p className="uk-margin-top">
-                {post.frontmatter.description}
-                <br />
-                <br />
-                <Link className="button" to={post.fields.slug}>
+              <p>{post.frontmatter.description}</p>
+              <div className="uk-margin-xlarge-bottom">
+                <Link
+                  style={{
+                    borderRadius: "500px",
+                    fontSize: "12px",
+                  }}
+                  className="uk-button uk-button-primary uk-button-small"
+                  to={post.fields.slug}
+                >
                   Keep Reading →
                 </Link>
-              </p>
+              </div>
             </article>
           </div>
         ))}
