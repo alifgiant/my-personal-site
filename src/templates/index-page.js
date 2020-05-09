@@ -37,7 +37,7 @@ const IndexPage = ({ data }) => {
         </div>
       </div>
       <div className="uk-section" id="blog-list">
-        <div className="uk-container">
+        <div className="uk-container blog">
           <BlogRoll />
         </div>
       </div>

@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Noto+Sans&family=Raleway&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Noto + Sans&family=Raleway&display=swap);
 @import url(https://cdn.jsdelivr.net/npm/uikit@3.4.3/dist/css/uikit.min.css);
 
 html {
@@ -13,7 +13,6 @@ html {
 .alif.subtitle {
   color: #0e0e0e;
   font-family: "Raleway", sans-serif;
-  /* font-family: 'Noto Sans', sans-serif; */
 }
 
 .alif.profile {
@@ -21,9 +20,35 @@ html {
   margin-top: 20px;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 510px) {
   .alif.profile {
     margin-left: 20px;
     margin-top: 0px;
+  }
+}
+
+.uk-container.blog {
+  max-width: 100%;
+}
+
+@media (min-width: 510px) {
+  .uk-container.blog {
+    max-width: 70%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .uk-container.blog {
+    max-width: 50%;
+  }
+}
+
+.gatsby-image-wrapper.preview {
+  max-height: 200px;
+}
+
+@media (min-width: 800px) {
+  .gatsby-image-wrapper.preview {
+    max-height: 300px;
   }
 }
