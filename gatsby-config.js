@@ -2,7 +2,6 @@ module.exports = {
   siteMetadata: {
     title: `Alif Akbar Site`,
     description: `Blog of whom love to learn new things and challenge himself.`,
-    motto: `"Non est ad astra mollis e terris via" -Seneca`,
     author: `Muhammad Alif Akbar`,
     site: `alifakbar.com`,
   },
