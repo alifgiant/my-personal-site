@@ -10,7 +10,6 @@ export const useSiteMetadata = () => {
             description
             site
             author
-            motto
           }
         }
       }
