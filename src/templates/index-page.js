@@ -1,5 +1,4 @@
 import React from "react";
-// import { Link, graphql } from "gatsby";
 import { graphql } from "gatsby";
 import { useSiteMetadata } from "../utils/site-meta";
 import Layout from "../components/Layout";
@@ -72,6 +71,17 @@ const IndexPage = ({ data }) => {
               </div>
               <div className="uk-flex uk-flex-wrap uk-flex-center uk-flex-left@s uk-margin-small-top">
                 {socmed.nodes.map((val, i) => createSocmed(val))}
+                <a
+                  className="uk-button uk-button-primary"
+                  style={{
+                    borderRadius: "500px",
+                    height: 38,
+                    color: "#FFF",
+                    fontSize: "12px",
+                  }}
+                >
+                  Read My CV
+                </a>
               </div>
             </div>
           </div>
