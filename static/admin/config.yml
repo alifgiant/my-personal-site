@@ -18,7 +18,7 @@ collections:
     label: "Socmed"
     folder: "content/socmed"
     create: true
-    slug: "{{slug}}"
+    slug: "{{name}}"
     fields:
       - {label: "Name", name: "name", widget: string}
       - {label: "Url", name: "url", widget: string}
