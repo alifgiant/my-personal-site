@@ -35,9 +35,9 @@ const PreviewCompatibleImage = ({ imageInfo }) => {
       <img
         className="preview"
         style={imageStyle}
-        data-src={image}
-        uk-img=""
+        src={image}
         alt={alt}
+        loading="lazy"
       />
     );
 

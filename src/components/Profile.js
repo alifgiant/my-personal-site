@@ -26,11 +26,11 @@ class Profile extends React.Component {
         <div>
           <img
             className="uk-border-circle"
-            data-src={page.image_url}
-            uk-img=""
+            src={page.image_url}
             alt="Portfolios"
             width="100"
             height="100"
+            loading="lazy"
           />
         </div>
         <div className="alif profile">
