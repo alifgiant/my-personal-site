@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import Img from "gatsby-image";
 
 class Profile extends React.Component {
   createSocmed({ icon, name, url }) {
@@ -25,12 +26,12 @@ class Profile extends React.Component {
       <div className="uk-flex uk-flex-center uk-flex-wrap">
         <div>
           <img
-            data-src={page.image_url}
-            uk-img=""
+            className="uk-border-circle"
+            src={page.image_url}
             alt="Portfolios"
             width="100"
             height="100"
-            className="uk-border-circle"
+            loading="lazy"
           />
         </div>
         <div className="alif profile">
