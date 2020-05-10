@@ -9,7 +9,7 @@ class TagRoll extends React.Component {
   render() {
     const tags = this.props.tags;
 
-    if (!tags) {
+    if (!tags || tags.length < 1) {
       return (
         <Layout>
           <NavBar />

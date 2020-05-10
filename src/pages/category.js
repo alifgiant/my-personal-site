@@ -8,7 +8,7 @@ class CategoryRoll extends React.Component {
   render() {
     const categoriesData = this.props.categoriesData;
 
-    if (!categoriesData) {
+    if (!categoriesData || categoriesData.length < 1) {
       return (
         <Layout>
           <NavBar />

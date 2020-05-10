@@ -9,6 +9,8 @@ class BlogRoll extends React.Component {
   render() {
     let { edges: posts } = this.props.data.allMarkdownRemark;
 
+    console.log(posts);
+
     if (this.props.categoryFilter) {
       posts = posts.filter(({ node: post }) => {
         const index = _.findIndex(
@@ -31,19 +33,21 @@ class BlogRoll extends React.Component {
       });
     }
 
-    if (!posts) {
+    if (!posts || posts.length < 1) {
       return (
-        <div className="uk-text-center uk-text-large uk-position-center">
-          <span role="img" aria-label="Sad emoticon">
-            😢{" "}
-          </span>
-          Belum nulis apa apa nih,
-          <br />
-          Coba balik lagi besok ya
-          <span role="img" aria-label="Excited emoticon">
-            {" "}
-            😆
-          </span>
+        <div uk-height-viewport="expand: true">
+          <div className="uk-text-center uk-text-large uk-position-center">
+            <span role="img" aria-label="Sad emoticon">
+              😢{" "}
+            </span>
+            Belum nulis apa apa nih,
+            <br />
+            Coba balik lagi besok ya
+            <span role="img" aria-label="Excited emoticon">
+              {" "}
+              😆
+            </span>
+          </div>
         </div>
       );
     }
@@ -115,7 +119,12 @@ export default ({ categoryFilter, tagFilter }) => {
       query BlogRollQuery {
         allMarkdownRemark(
           sort: { order: DESC, fields: [frontmatter___date] }
-          filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
+          filter: {
+            frontmatter: {
+              templateKey: { eq: "blog-post" }
+              hidepost: { eq: false }
+            }
+          }
         ) {
           edges {
             node {
