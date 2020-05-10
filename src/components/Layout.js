@@ -23,7 +23,7 @@ const TemplateWrapper = ({ children }) => {
       <div>{children}</div>
       <footer>
         <div className="uk-text-small uk-text-center uk-margin-bottom uk-text-muted	">
-          2020 © All rights reserved
+          Copyright © 2020 Muhammad Alif Akbar. All Rights Reserved.
         </div>
       </footer>
     </div>

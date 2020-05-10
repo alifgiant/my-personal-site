@@ -11,54 +11,50 @@ class BlogRoll extends React.Component {
 
     console.log(posts);
 
-    if (!posts) return <div></div>;
+    if (!posts) return <div>Empty</div>;
 
     return (
-      <div className="uk-width-2-4">
+      <div>
         {posts.map(({ node: post }) => (
           <div key={post.id}>
-            <article
-              className={post.frontmatter.featuredpost ? "is-featured" : ""}
-            >
-              <BlogMeta
-                date={post.frontmatter.date}
-                categories={post.frontmatter.categories}
-              />
-              <div>
-                <Link
-                  className="uk-text-uppercase uk-text-lead uk-text-bold uk-text-bold"
-                  style={{
-                    color: "#0e0e0e",
+            <BlogMeta
+              date={post.frontmatter.date}
+              categories={post.frontmatter.categories}
+            />
+            <div>
+              <Link
+                className="uk-text-uppercase uk-text-lead uk-text-bold"
+                style={{
+                  color: "#0e0e0e",
+                }}
+                to={post.fields.slug}
+              >
+                {post.frontmatter.title}
+              </Link>
+            </div>
+            {post.frontmatter.featuredimage ? (
+              <div className="featured-thumbnail uk-margin-small-top">
+                <PreviewCompatibleImage
+                  imageInfo={{
+                    image: post.frontmatter.featuredimage,
+                    alt: `featured image thumbnail for post ${post.frontmatter.title}`,
                   }}
-                  to={post.fields.slug}
-                >
-                  {post.frontmatter.title}
-                </Link>
+                />
               </div>
-              {post.frontmatter.featuredimage ? (
-                <div className="featured-thumbnail uk-margin-small-top">
-                  <PreviewCompatibleImage
-                    imageInfo={{
-                      image: post.frontmatter.featuredimage,
-                      alt: `featured image thumbnail for post ${post.frontmatter.title}`,
-                    }}
-                  />
-                </div>
-              ) : null}
-              <p>{post.frontmatter.description}</p>
-              <div className="uk-margin-large-bottom">
-                <Link
-                  style={{
-                    borderRadius: "500px",
-                    fontSize: "12px",
-                  }}
-                  className="uk-button uk-button-primary uk-button-small"
-                  to={post.fields.slug}
-                >
-                  Keep Reading →
-                </Link>
-              </div>
-            </article>
+            ) : null}
+            <p>{post.frontmatter.description}</p>
+            <div className="uk-margin-large-bottom">
+              <Link
+                style={{
+                  borderRadius: "500px",
+                  fontSize: "12px",
+                }}
+                className="uk-button uk-button-primary uk-button-small"
+                to={post.fields.slug}
+              >
+                Keep Reading →
+              </Link>
+            </div>
           </div>
         ))}
       </div>

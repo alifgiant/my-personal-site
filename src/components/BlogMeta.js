@@ -8,7 +8,7 @@ const BlogMeta = ({ date, categories }) => {
       <span
         className="uk-text-uppercase uk-text-small"
         style={{
-          color: "#1f1f1fs",
+          color: "#1f1f1f",
         }}
       >
         {date}

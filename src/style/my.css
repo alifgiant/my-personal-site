@@ -7,7 +7,7 @@ html {
 
 .alif.title {
   color: #0e0e0e;
-  font-family: "Raleway", sans-serif;
+  font-family: "Noto Sans", sans-serif;
 }
 
 .alif.subtitle {
@@ -51,4 +51,16 @@ html {
   .gatsby-image-wrapper.preview {
     max-height: 300px;
   }
+}
+
+.gatsby-highlight > pre[class*="language-"] > .line-numbers-rows {
+  padding-left: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+h2 {
+  color: #0e0e0e;
+  font-size: 1.5rem;
+  line-height: 1.1;
 }

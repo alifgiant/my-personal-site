@@ -1,50 +1,93 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { kebabCase } from 'lodash'
-import { Helmet } from 'react-helmet'
-import { graphql, Link } from 'gatsby'
-import Layout from '../components/Layout'
-import Content, { HTMLContent } from '../components/Content'
+import React from "react";
+import PropTypes from "prop-types";
+import { kebabCase } from "lodash";
+import { Helmet } from "react-helmet";
+import { graphql, Link } from "gatsby";
+import Content, { HTMLContent } from "../utils/content";
+import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
+import Layout from "../components/Layout";
+import BlogMeta from "../components/BlogMeta";
 
 export const BlogPostTemplate = ({
   content,
   contentComponent,
   description,
+  date,
   tags,
+  categories,
   title,
   helmet,
+  featuredimage,
 }) => {
-  const PostContent = contentComponent || Content
+  const PostContent = contentComponent || Content;
 
   return (
-    <section className="section">
-      {helmet || ''}
-      <div className="container content">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
-              {title}
-            </h1>
-            <p>{description}</p>
-            <PostContent content={content} />
-            {tags && tags.length ? (
-              <div style={{ marginTop: `4rem` }}>
-                <h4>Tags</h4>
-                <ul className="taglist">
-                  {tags.map((tag) => (
-                    <li key={tag + `tag`}>
-                      <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ) : null}
+    <div>
+      <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+        <nav class="uk-navbar uk-navbar-container">
+          <div class="uk-navbar-center">
+            <Link
+              className="uk-iconnav uk-padding-small uk-text-small"
+              to="/"
+              style={{ textDecoration: "none" }}
+            >
+              <span
+                class="uk-icon uk-margin-small-right"
+                uk-icon="icon: home"
+              />
+              Home
+            </Link>
           </div>
+        </nav>
+      </div>
+
+      <div className="uk-section" id="blog-list">
+        <div className="uk-container blog">
+          {helmet || ""}
+          <BlogMeta date={date} categories={categories} />
+          <div
+            className="uk-text-uppercase uk-text-large uk-text-bold"
+            style={{
+              color: "#0e0e0e",
+            }}
+          >
+            {title}
+          </div>
+          {featuredimage ? (
+            <div className="featured-thumbnail uk-margin-small-top">
+              <PreviewCompatibleImage
+                imageInfo={{
+                  image: featuredimage,
+                  alt: `featured image thumbnail for post ${title}`,
+                }}
+              />
+            </div>
+          ) : null}
+          <p>{description}</p>
+          <PostContent content={content} />
+          {tags && tags.length ? (
+            <div className="uk-margin-xlarge-top">
+              {tags.map((tag) => (
+                <span
+                  key={tag + `tag`}
+                  className="uk-button uk-button-secondary uk-button-small"
+                  style={{ marginRight: "12px" }}
+                >
+                  <Link
+                    style={{ color: "#FFF", textDecoration: "none" }}
+                    to={`/tag/${kebabCase(tag)}/`}
+                  >
+                    {tag}
+                  </Link>
+                </span>
+              ))}
+            </div>
+          ) : null}
         </div>
       </div>
-    </section>
-  )
-}
+    </div>
+  );
+};
 
 BlogPostTemplate.propTypes = {
   content: PropTypes.node.isRequired,
@@ -52,19 +95,20 @@ BlogPostTemplate.propTypes = {
   description: PropTypes.string,
   title: PropTypes.string,
   helmet: PropTypes.object,
-}
+};
 
 const BlogPost = ({ data }) => {
-  const { markdownRemark: post } = data
+  const { markdownRemark: post } = data;
 
   return (
     <Layout>
       <BlogPostTemplate
+        title={post.frontmatter.title}
+        description={post.frontmatter.description}
         content={post.html}
         contentComponent={HTMLContent}
-        description={post.frontmatter.description}
         helmet={
-          <Helmet titleTemplate="%s | Blog">
+          <Helmet titleTemplate="Blog | %s">
             <title>{`${post.frontmatter.title}`}</title>
             <meta
               name="description"
@@ -72,20 +116,22 @@ const BlogPost = ({ data }) => {
             />
           </Helmet>
         }
+        featuredimage={post.frontmatter.featuredimage}
+        date={post.frontmatter.date}
         tags={post.frontmatter.tags}
-        title={post.frontmatter.title}
+        categories={post.frontmatter.categories}
       />
     </Layout>
-  )
-}
+  );
+};
 
 BlogPost.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.object,
   }),
-}
+};
 
-export default BlogPost
+export default BlogPost;
 
 export const pageQuery = graphql`
   query BlogPostByID($id: String!) {
@@ -93,11 +139,21 @@ export const pageQuery = graphql`
       id
       html
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
         title
+        templateKey
         description
+        date(formatString: "DD MMMM YYYY")
+        featuredpost
         tags
+        categories
+        featuredimage {
+          childImageSharp {
+            fluid(maxWidth: 200, maxHeight: 120, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
   }
-`
+`;
