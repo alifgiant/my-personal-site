@@ -17,12 +17,28 @@ const TemplateWrapper = ({ children }) => {
         <meta property="og:type" content="blog.blog" />
         <meta property="og:url" content="/" />
         <meta property="og:image" content={`${withPrefix("/")}favicon.png`} />s
+        <link
+          rel="preload"
+          href="https://cdn.jsdelivr.net/npm/uikit@3.4.3/dist/css/uikit.min.css"
+          as="style"
+          onload="this.onload=null;this.rel='stylesheet'"
+        />
+        <noscript>
+          {`
+            <link
+              rel="stylesheet"
+              type="text/css"
+              href="https://cdn.jsdelivr.net/npm/uikit@3.4.3/dist/css/uikit.min.css"
+            />
+          `}
+        </noscript>
         <script
           defer
           src="https://kit.fontawesome.com/ad68aef9c2.js"
           crossorigin="anonymous"
         />
       </Helmet>
+
       <div>{children}</div>
       <footer>
         <div className="uk-container blog uk-text-small uk-text-center uk-margin-bottom uk-text-muted	">
