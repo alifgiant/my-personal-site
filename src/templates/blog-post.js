@@ -7,6 +7,7 @@ import Content, { HTMLContent } from "../utils/content";
 import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
 import Layout from "../components/Layout";
 import BlogMeta from "../components/BlogMeta";
+import NavBar from "../components/NavBar";
 
 export const BlogPostTemplate = ({
   content,
@@ -23,23 +24,7 @@ export const BlogPostTemplate = ({
 
   return (
     <div>
-      <div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
-        <nav class="uk-navbar uk-navbar-container">
-          <div class="uk-navbar-center">
-            <Link
-              className="uk-iconnav uk-padding-small uk-text-small"
-              to="/"
-              style={{ textDecoration: "none" }}
-            >
-              <span
-                class="uk-icon uk-margin-small-right"
-                uk-icon="icon: home"
-              />
-              Home
-            </Link>
-          </div>
-        </nav>
-      </div>
+      <NavBar />
 
       <div className="uk-section" id="blog-list">
         <div className="uk-container blog">

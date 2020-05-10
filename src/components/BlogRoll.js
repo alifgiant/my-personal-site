@@ -1,17 +1,44 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Link, graphql, StaticQuery } from "gatsby";
+import { Link, graphql, useStaticQuery } from "gatsby";
 import PreviewCompatibleImage from "./PreviewCompatibleImage";
 import BlogMeta from "../components/BlogMeta";
+import _ from "lodash";
 
 class BlogRoll extends React.Component {
   render() {
-    const { data } = this.props;
-    const { edges: posts } = data.allMarkdownRemark;
+    var { edges: posts } = this.props.data.allMarkdownRemark;
 
-    console.log(posts);
+    if (this.props.categoryFilter) {
+      posts = posts.filter(({ node: post }) => {
+        const index = post.frontmatter.categories.indexOf(
+          this.props.categoryFilter
+        );
 
-    if (!posts) return <div>Empty</div>;
+        return index > -1;
+      });
+    }
+
+    if (this.props.tagFilter) {
+      posts = posts.filter(({ node: post }) => {
+        const index = _.findIndex(
+          post.frontmatter.tags,
+          (o) => o.toLowerCase() === this.props.tagFilter.toLowerCase()
+        );
+
+        return index > -1;
+      });
+    }
+
+    if (!posts) {
+      return (
+        <div className="uk-text-center uk-text-large">
+          😢 Belum nulis apa apa nih,
+          <br />
+          Coba balik lagi besok ya 😆
+        </div>
+      );
+    }
 
     return (
       <div>
@@ -63,6 +90,8 @@ class BlogRoll extends React.Component {
 }
 
 BlogRoll.propTypes = {
+  categoryFilter: PropTypes.string,
+  tagFilter: PropTypes.string,
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
       edges: PropTypes.array,
@@ -70,9 +99,9 @@ BlogRoll.propTypes = {
   }),
 };
 
-export default () => (
-  <StaticQuery
-    query={graphql`
+export default ({ categoryFilter, tagFilter }) => {
+  const data = useStaticQuery(
+    graphql`
       query BlogRollQuery {
         allMarkdownRemark(
           sort: { order: DESC, fields: [frontmatter___date] }
@@ -104,7 +133,14 @@ export default () => (
           }
         }
       }
-    `}
-    render={(data, count) => <BlogRoll data={data} count={count} />}
-  />
-);
+    `
+  );
+
+  return (
+    <BlogRoll
+      data={data}
+      tagFilter={tagFilter}
+      categoryFilter={categoryFilter}
+    />
+  );
+};
