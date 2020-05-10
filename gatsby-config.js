@@ -92,7 +92,6 @@ module.exports = {
         htmlFavicon: `src/images/web-logo.png`,
       },
     },
-    "gatsby-plugin-netlify-identity-widget",
     "gatsby-plugin-netlify", // make sure to keep it last in the array
   ],
 };
