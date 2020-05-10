@@ -79,7 +79,13 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
-    `gatsby-plugin-netlify-cms`,
+    {
+      resolve: `gatsby-plugin-netlify-cms`,
+      options: {
+        htmlTitle: `Alif Blog CMS`,
+        htmlFavicon: `src/images/web-logo.png`,
+      },
+    },
     "gatsby-plugin-netlify", // make sure to keep it last in the array
   ],
 };

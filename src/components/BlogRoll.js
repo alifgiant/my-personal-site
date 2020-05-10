@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Link, graphql, StaticQuery } from "gatsby";
 import PreviewCompatibleImage from "./PreviewCompatibleImage";
+import BlogMeta from "../components/BlogMeta";
 
 class BlogRoll extends React.Component {
   render() {
@@ -19,26 +20,11 @@ class BlogRoll extends React.Component {
             <article
               className={post.frontmatter.featuredpost ? "is-featured" : ""}
             >
+              <BlogMeta
+                date={post.frontmatter.date}
+                tags={post.frontmatter.tags}
+              />
               <div>
-                <span
-                  className="uk-text-uppercase uk-text-small"
-                  style={{
-                    color: "#1f1f1fs",
-                  }}
-                >
-                  {post.frontmatter.date}
-                </span>
-                {post.frontmatter.tags.map((tag) => (
-                  <Link
-                    className="uk-text-uppercase uk-text-small uk-margin-small-left"
-                    key={tag}
-                    to={"/tags/" + tag.toLowerCase()}
-                  >
-                    {tag}
-                  </Link>
-                ))}
-              </div>
-              <div className="uk-margin-small-top">
                 <Link
                   className="uk-text-uppercase uk-text-lead uk-text-bold uk-text-bold"
                   style={{
@@ -50,7 +36,7 @@ class BlogRoll extends React.Component {
                 </Link>
               </div>
               {post.frontmatter.featuredimage ? (
-                <div className="featured-thumbnail">
+                <div className="featured-thumbnail uk-margin-small-top">
                   <PreviewCompatibleImage
                     imageInfo={{
                       image: post.frontmatter.featuredimage,
@@ -60,7 +46,7 @@ class BlogRoll extends React.Component {
                 </div>
               ) : null}
               <p>{post.frontmatter.description}</p>
-              <div className="uk-margin-xlarge-bottom">
+              <div className="uk-margin-large-bottom">
                 <Link
                   style={{
                     borderRadius: "500px",
