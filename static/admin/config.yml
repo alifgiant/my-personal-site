@@ -40,7 +40,7 @@ collections:
         searchFields: "title"
         displayFields: "title"
         multiple: true
-      - {label: "Featured Post", name: "featuredpost", widget: "boolean", required: false}
+      - {label: "Featured Post", name: "featuredpost", widget: "boolean", default: false, required: false}
       - {label: "Featured Image", name: "featuredimage", widget: image, required: false}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list", required: false}

@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Link, graphql, useStaticQuery } from "gatsby";
-import _ from "lodash";
 import NavBar from "../components/NavBar";
 import Layout from "../components/Layout";
 

@@ -11,8 +11,9 @@ class BlogRoll extends React.Component {
 
     if (this.props.categoryFilter) {
       posts = posts.filter(({ node: post }) => {
-        const index = post.frontmatter.categories.indexOf(
-          this.props.categoryFilter
+        const index = _.findIndex(
+          post.frontmatter.categories,
+          (o) => _.kebabCase(o) === _.kebabCase(this.props.categoryFilter)
         );
 
         return index > -1;
@@ -23,7 +24,7 @@ class BlogRoll extends React.Component {
       posts = posts.filter(({ node: post }) => {
         const index = _.findIndex(
           post.frontmatter.tags,
-          (o) => o.toLowerCase() === this.props.tagFilter.toLowerCase()
+          (o) => _.kebabCase(o) === _.kebabCase(this.props.tagFilter)
         );
 
         return index > -1;
@@ -32,14 +33,14 @@ class BlogRoll extends React.Component {
 
     if (!posts) {
       return (
-        <div className="uk-text-center uk-text-large">
-          <span role="img" alt="jsx-a11y/accessible-emoji">
+        <div className="uk-text-center uk-text-large uk-position-center">
+          <span role="img" aria-label="Sad emoticon">
             😢{" "}
           </span>
           Belum nulis apa apa nih,
           <br />
           Coba balik lagi besok ya
-          <span role="img" alt="jsx-a11y/accessible-emoji">
+          <span role="img" aria-label="Excited emoticon">
             {" "}
             😆
           </span>
@@ -57,7 +58,7 @@ class BlogRoll extends React.Component {
             />
             <div>
               <Link
-                className="uk-text-uppercase uk-text-lead uk-text-bold"
+                className="uk-text-uppercase uk-text-lead uk-text-bold alif subtitle"
                 style={{
                   color: "#0e0e0e",
                 }}
@@ -66,15 +67,17 @@ class BlogRoll extends React.Component {
                 {post.frontmatter.title}
               </Link>
             </div>
-            {post.frontmatter.featuredimage ? (
-              <div className="featured-thumbnail uk-margin-small-top">
-                <PreviewCompatibleImage
-                  imageInfo={{
-                    image: post.frontmatter.featuredimage,
-                    alt: `featured image thumbnail for post ${post.frontmatter.title}`,
-                  }}
-                />
-              </div>
+            {post.frontmatter.featuredpost ? (
+              post.frontmatter.featuredimage ? (
+                <div className="featured-thumbnail uk-margin-small-top">
+                  <PreviewCompatibleImage
+                    imageInfo={{
+                      image: post.frontmatter.featuredimage,
+                      alt: `featured image thumbnail for post ${post.frontmatter.title}`,
+                    }}
+                  />
+                </div>
+              ) : null
             ) : null}
             <p>{post.frontmatter.description}</p>
             <div className="uk-margin-large-bottom">
