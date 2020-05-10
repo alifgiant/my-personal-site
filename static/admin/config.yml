@@ -1,7 +1,14 @@
 backend:
   name: git-gateway
+  branch: master
+  commit_messages:
+    create: 'Create {{collection}} “{{slug}}”'
+    update: 'Update {{collection}} “{{slug}}”'
+    delete: 'Delete {{collection}} “{{slug}}”'
+    uploadMedia: '[skip ci] Upload “{{path}}”'
+    deleteMedia: '[skip ci] Delete “{{path}}”'
 
-# site_url: https://alifakbar.com
+# site_url: https://alifakbar.netlify.app
 
 # when using a custom proxy server port
 local_backend:

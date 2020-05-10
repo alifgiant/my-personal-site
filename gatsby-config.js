@@ -28,8 +28,8 @@ module.exports = {
       },
     },
     `gatsby-plugin-react-helmet`,
-    `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: "gatsby-transformer-remark",
       options: {
@@ -92,6 +92,7 @@ module.exports = {
         htmlFavicon: `src/images/web-logo.png`,
       },
     },
+    "gatsby-plugin-netlify-identity-widget",
     "gatsby-plugin-netlify", // make sure to keep it last in the array
   ],
 };
