@@ -55,7 +55,7 @@ export const BlogPostTemplate = ({
               {tags.map((tag) => (
                 <span
                   key={tag + `tag`}
-                  className="uk-button uk-button-secondary uk-button-small uk-margin-bottom"
+                  className="uk-button uk-button-secondary uk-button-small uk-margin-small-bottom"
                   style={{ marginRight: "12px" }}
                 >
                   <Link
