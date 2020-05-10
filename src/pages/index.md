@@ -8,17 +8,21 @@ cv: "https://www.notion.so/Curriculum-Vitae-b20c4204b40c47b0b0cf4f07230e4a7d"
 socmed:
   - name: Facebook
     url: https://fb.com/m.alif.akbar
-    icon: facebook
+    icon: fab fa-facebook-f
   - name: Instagram
     url: https://instagram.com/muh.alifgiant
-    icon: instagram
+    icon: fab fa-instagram
   - name: LinkedIn
     url: https://www.linkedin.com/in/muhammad-alif-akbar/
-    icon: linkedin
+    icon: fab fa-linkedin-in
   - name: Github
     url: https://github.com/alifgiant
-    icon: github
+    icon: fab fa-github
   - name: Email
     url: mailto:muh.alifgiant@gmail.com
-    icon: mail
+    icon: far fa-envelope
+  # - name: Telegram
+  #   url: telegram:@alifgiant
+  #   icon: fab fa-telegram-plane
+    
 ---

@@ -7,11 +7,11 @@ const NavBar = () => {
       <nav className="uk-navbar uk-navbar-container">
         <div className="uk-navbar-center">
           <Link
-            className="uk-iconnav uk-padding-small uk-text-small"
+            className="uk-padding-small uk-text-small"
             to="/"
             style={{ textDecoration: "none" }}
           >
-            <span className="uk-icon uk-margin-small-right" uk-icon="icon: home" />
+            <span className="uk-margin-small-right fas fa-home" />
             Home
           </Link>
         </div>

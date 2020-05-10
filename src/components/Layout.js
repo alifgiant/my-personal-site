@@ -18,7 +18,10 @@ const TemplateWrapper = ({ children }) => {
         <meta property="og:url" content="/" />
         <meta property="og:image" content={`${withPrefix("/")}favicon.png`} />s
         <script src="https://cdn.jsdelivr.net/npm/uikit@3.4.3/dist/js/uikit.min.js" />
-        <script src="https://cdn.jsdelivr.net/npm/uikit@3.4.3/dist/js/uikit-icons.min.js" />
+        <script
+          src="https://kit.fontawesome.com/ad68aef9c2.js"
+          crossorigin="anonymous"
+        />
       </Helmet>
       <div>{children}</div>
       <footer>

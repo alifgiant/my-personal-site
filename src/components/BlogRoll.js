@@ -9,8 +9,6 @@ class BlogRoll extends React.Component {
   render() {
     let { edges: posts } = this.props.data.allMarkdownRemark;
 
-    console.log(posts);
-
     if (this.props.categoryFilter) {
       posts = posts.filter(({ node: post }) => {
         const index = _.findIndex(

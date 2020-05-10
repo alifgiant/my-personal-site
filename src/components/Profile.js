@@ -4,11 +4,16 @@ import PropTypes from "prop-types";
 class Profile extends React.Component {
   createSocmed({ icon, name, url }) {
     return (
-      <div key={"socmed-" + name} className="uk-margin-small-right">
-        <a href={url}>
-          <i className="uk-icon-button" uk-icon={icon} />
-        </a>
-      </div>
+      <a
+        href={url}
+        key={"socmed-" + name}
+        style={{
+          textDecoration: "none",
+        }}
+        className="uk-margin-small-right uk-icon-button"
+      >
+        <span className={icon} />
+      </a>
     );
   }
 
