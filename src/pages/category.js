@@ -93,7 +93,6 @@ export default () => {
   );
 
   const { edges: categories } = result;
-  console.log(categories);
 
   let categoriesData = [];
   categories.forEach(({ node: category }) => {
@@ -102,7 +101,6 @@ export default () => {
       slug: category.fields.slug,
     });
   });
-  console.log(categoriesData);
 
   return <CategoryRoll categoriesData={categoriesData} />;
 };
