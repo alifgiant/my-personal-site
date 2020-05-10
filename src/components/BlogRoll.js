@@ -22,7 +22,7 @@ class BlogRoll extends React.Component {
             >
               <BlogMeta
                 date={post.frontmatter.date}
-                tags={post.frontmatter.tags}
+                categories={post.frontmatter.categories}
               />
               <div>
                 <Link
@@ -95,6 +95,7 @@ export default () => (
                 date(formatString: "DD MMMM YYYY")
                 featuredpost
                 tags
+                categories
                 featuredimage {
                   childImageSharp {
                     fluid(maxWidth: 200, maxHeight: 120, quality: 100) {

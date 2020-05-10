@@ -1,8 +1,7 @@
 backend:
   name: git-gateway
 
-# when using the default proxy server port
-# local_backend: true
+# site_url: https://alifakbar.com
 
 # when using a custom proxy server port
 local_backend:
@@ -14,15 +13,15 @@ media_folder: "src/images"
 public_folder: "/images/uploads"
 
 collections:
-  - name: "socmed"
-    label: "Socmed"
-    folder: "content/socmed"
+  - name: "category-collection"
+    label: "Category"
+    folder: "content/category"
     create: true
-    slug: "{{name}}"
+    slug: "{{slug}}"
     fields:
-      - {label: "Name", name: "name", widget: string}
-      - {label: "Url", name: "url", widget: string}
-      - {label: "Icon Class", name: "icon", widget: string}
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "category-select"}
+      - {label: "Title", name: "title", widget: string}
+      - {label: "Description", name: "description", widget: string}
   - name: "blog"
     label: "Blog"
     folder: "content/blog"
@@ -30,13 +29,21 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
-      - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Title", name: "title", widget: "string"}
       - {label: "Description", name: "description", widget: "text"}
-      - {label: "Featured Post", name: "featuredpost", widget: "boolean"}
-      - {label: "Featured Image", name: "featuredimage", widget: image}
+      - label: "Category"
+        name: "categories"
+        widget: "relation"
+        collection: "category-collection"
+        valueField: "{{slug}}"
+        searchFields: "title"
+        displayFields: "title"
+        multiple: true
+      - {label: "Featured Post", name: "featuredpost", widget: "boolean", required: false}
+      - {label: "Featured Image", name: "featuredimage", widget: image, required: false}
       - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "Tags", name: "tags", widget: "list", required: false}
   - name: "pages"
     label: "Pages"
     files:
@@ -57,13 +64,3 @@ collections:
               - {label: "Name", name: "name", widget: string}
               - {label: "Url", name: "url", widget: string}
               - {label: "Icon Class", name: "icon", widget: string}
-      - file: "src/pages/tags.md"
-        label: "Tag List"
-        name: "tags"
-        fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "tags-page"}
-          - {label: Title, name: title, widget: string}
-          - {label: Image, name: image, widget: image}
-          - {label: Heading, name: heading, widget: string}
-          - {label: Subheading, name: subheading, widget: string}
-          - {label: Description, name: description, widget: string}

@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 import { kebabCase } from "lodash";
 
-const BlogMeta = ({ date, tags }) => {
+const BlogMeta = ({ date, categories }) => {
   return (
     <div>
       <span
@@ -13,13 +13,13 @@ const BlogMeta = ({ date, tags }) => {
       >
         {date}
       </span>
-      {tags.map((tag) => (
+      {categories.map((category) => (
         <Link
           className="uk-text-uppercase uk-text-small uk-margin-small-left"
-          key={tag}
-          to={"/tags/" + kebabCase(tag)}
+          key={category}
+          to={"/category/" + kebabCase(category)}
         >
-          {tag}
+          {kebabCase(category)}
         </Link>
       ))}
     </div>
