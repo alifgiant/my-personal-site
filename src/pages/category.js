@@ -1,10 +1,108 @@
-import React from "react"
+import React from "react";
+import PropTypes from "prop-types";
+import { Link, graphql, useStaticQuery } from "gatsby";
+import _ from "lodash";
+import NavBar from "../components/NavBar";
+import Layout from "../components/Layout";
 
-const NotFoundPage = () => (
-    <div>
-        <h1>Halaman Category</h1>
-        <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-    </div>
-);
+class CategoryRoll extends React.Component {
+  render() {
+    const categoriesData = this.props.categoriesData;
 
-export default NotFoundPage
+    if (!categoriesData) {
+      return (
+        <Layout>
+          <NavBar />
+          <div className="uk-section" id="tag-list">
+            <div
+              className="uk-container blog"
+              uk-height-viewport="expand: true"
+            >
+              <div className="uk-text-center uk-text-large uk-position-center">
+                <span role="img" aria-label="Sad emoticon">
+                  😢{" "}
+                </span>
+                Belum nulis apa apa nih dengan kategori,
+                <br />
+                Coba balik lagi besok ya
+                <span role="img" aria-label="Excited emoticon">
+                  {" "}
+                  😆
+                </span>
+              </div>
+            </div>
+          </div>
+        </Layout>
+      );
+    }
+
+    return (
+      <Layout>
+        <NavBar />
+        <div className="uk-section" id="category-list">
+          <div className="uk-container blog" uk-height-viewport="expand: true">
+            <div className="uk-flex uk-flex-center uk-flex-wrap">
+              {/* _.flatten([tags, tags, tags, tags, tags]) */}
+              {categoriesData.map((category) => (
+                <span
+                  key={category.title + `-category`}
+                  className="uk-button uk-button-secondary uk-margin-bottom"
+                  style={{ marginRight: "12px" }}
+                >
+                  <Link
+                    style={{ color: "#FFF", textDecoration: "none" }}
+                    to={category.slug}
+                  >
+                    {category.title}
+                  </Link>
+                </span>
+              ))}
+            </div>
+          </div>
+        </div>
+      </Layout>
+    );
+  }
+}
+
+CategoryRoll.propTypes = {
+  categoriesData: PropTypes.array,
+};
+
+export default () => {
+  const { allMarkdownRemark: result } = useStaticQuery(
+    graphql`
+      query categoryQuery {
+        allMarkdownRemark(
+          filter: { frontmatter: { templateKey: { eq: "category-select" } } }
+        ) {
+          edges {
+            node {
+              frontmatter {
+                title
+                description
+              }
+              fields {
+                slug
+              }
+            }
+          }
+        }
+      }
+    `
+  );
+
+  const { edges: categories } = result;
+  console.log(categories);
+
+  let categoriesData = [];
+  categories.forEach(({ node: category }) => {
+    categoriesData.push({
+      title: category.frontmatter.title,
+      slug: category.fields.slug,
+    });
+  });
+  console.log(categoriesData);
+
+  return <CategoryRoll categoriesData={categoriesData} />;
+};

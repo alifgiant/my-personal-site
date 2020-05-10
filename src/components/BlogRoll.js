@@ -7,7 +7,7 @@ import _ from "lodash";
 
 class BlogRoll extends React.Component {
   render() {
-    var { edges: posts } = this.props.data.allMarkdownRemark;
+    let { edges: posts } = this.props.data.allMarkdownRemark;
 
     if (this.props.categoryFilter) {
       posts = posts.filter(({ node: post }) => {
@@ -33,9 +33,16 @@ class BlogRoll extends React.Component {
     if (!posts) {
       return (
         <div className="uk-text-center uk-text-large">
-          😢 Belum nulis apa apa nih,
+          <span role="img" alt="jsx-a11y/accessible-emoji">
+            😢{" "}
+          </span>
+          Belum nulis apa apa nih,
           <br />
-          Coba balik lagi besok ya 😆
+          Coba balik lagi besok ya
+          <span role="img" alt="jsx-a11y/accessible-emoji">
+            {" "}
+            😆
+          </span>
         </div>
       );
     }

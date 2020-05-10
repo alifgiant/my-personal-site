@@ -22,7 +22,7 @@ const TemplateWrapper = ({ children }) => {
       </Helmet>
       <div>{children}</div>
       <footer>
-        <div className="uk-text-small uk-text-center uk-margin-bottom uk-text-muted	">
+        <div className="uk-container blog uk-text-small uk-text-center uk-margin-bottom uk-text-muted	">
           Copyright © 2020 Muhammad Alif Akbar. All Rights Reserved.
         </div>
       </footer>
