@@ -49,6 +49,7 @@ export const BlogPostTemplate = ({
             </div>
           ) : null}
           <p>{description}</p>
+          <hr />
           <PostContent content={content} />
           {tags && tags.length ? (
             <div className="uk-margin-xlarge-top">
