@@ -79,7 +79,7 @@ module.exports = {
         short_name: `Personal Site`,
         start_url: `/`,
         display: `minimal-ui`,
-        icon: `src/images/web-logo.png`, // This path is relative to the root of the site.
+        icon: `static/assets/web-logo.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
@@ -89,7 +89,7 @@ module.exports = {
       resolve: `gatsby-plugin-netlify-cms`,
       options: {
         htmlTitle: `Alif Blog CMS`,
-        htmlFavicon: `src/images/web-logo.png`,
+        htmlFavicon: `static/assets/icon-48x48.png`,
       },
     },
     "gatsby-plugin-netlify", // make sure to keep it last in the array
