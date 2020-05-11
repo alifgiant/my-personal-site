@@ -50,3 +50,11 @@ Saya akhirnya memutuskan menggunakan kombinasi [GatsbyJS](https://www.gatsbyjs.o
 - Saya tidak menemukan kemungkinan melakukan custom API call di backend (hanya yang sudah dalam bentuk plugin)
 - Tampilan halaman admin, secara default, tidak sepenuhnya bisa di custom
 - Query menggunakan graphQL, yang tidak terbiasa mungkin akan kesulitan pada awalnya
+
+---
+
+Akhir kata, mungkin saya terdengar seperti orang yang sangat pelit, karena sejak awal nyarinya yang gratisan 😔. Tapi menurut saya untuk project pribadi yang berupa blog dan portfolio dimana traffic nya tidak begitu besar, sayang sekali jika harus bayar mahal 🤠 padahal ada solusi murah asalkan mau _BELAJAR_.
+
+> It’s not going to be easy, but it’s going to be worth it.
+
+---

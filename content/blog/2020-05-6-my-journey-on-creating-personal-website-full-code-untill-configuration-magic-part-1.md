@@ -9,7 +9,6 @@ categories:
   - tech
   - experience
 featuredpost: false
-featuredimage: " "
 tags:
   - Github
   - Heroku
@@ -25,7 +24,7 @@ Di ujung tahun 2017, mendekati masa akhir kuliah (sambil mengerjakan skripsi pas
 
 Website pribadi saya yang pertama di host menggunakan fitur static host milik github. Saya cukup mendaftar di website [Github.com](https://github.com) lalu membuat sebuah repository dengan format **\[username].github.io** kemudian github akan secara otomatis menghost repository tersebut dengan halaman home berupa file **/index.html**. Contoh milik saya bisa dilihat di [alifgiant.github.io](https://alifgiant.github.io) dengan [repo](https://github.com/alifgiant/alifgiant.github.io). Sebenarnya website ini bukan saya buat diakhir 2017.
 
-Saya sudah mulai membuatnya lebih awal sekitar tahun 2015, dalam rangka belajar web mandiri. Pada saat itu saya hanya mencari template gratisan 🤫 lalu mengeditnya sedikit demi sedikit, memasukan portfolio saya sampai saat itu. Saya memasukkan **.github.io** ke dalam list ini karena walaupun sudah lebih dahulu dibuat, karena mungkin buat kamu yang baru mulai belajar, ini bisa menjadi referensi (_after all_, website di github.io sangat mudah untuk dibuat). Tutorial pembuatannya akan saya tulis di blog post berikutnya.
+Sebenarnya, saya sudah mulai membuatnya lebih awal sekitar tahun 2015, dalam rangka belajar web mandiri. Pada saat itu saya hanya mencari template gratisan 🤫 lalu mengeditnya sedikit demi sedikit, memasukan portfolio. Saya memasukkan **.github.io** ke dalam list ini, karena mungkin buat kamu yang baru mulai belajar, ini bisa menjadi referensi (_after all_, website di github.io sangat mudah untuk dibuat). Tutorial pembuatannya akan saya tulis di blog post berikutnya.
 
 ### Kelebihan
 

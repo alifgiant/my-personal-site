@@ -9,7 +9,6 @@ categories:
   - tech
   - experience
 featuredpost: false
-featuredimage: " "
 tags:
   - Firebase
   - Cloud Function
@@ -20,7 +19,7 @@ tags:
 
 ## Firebase Host, Function dan Flamelink
 
-Tepat ketika saya mencari solusi lain, dan saya mendapatkan informasi mengenai sebuah layanan google menyediakan _free hosting_, bernama [Firebase](https://firebase.github.com) tentu saya sekita lanjut mencoba nya. Firebase membuat saya teringat dengan **github.io** dan **heroku**, kemudahan dalam membuat web dari static html di github dan layanan database, storage, _cloud function_, _authentication_ di heroku.
+Saya mencoba mencari solusi lain, lalu menemukan informasi mengenai sebuah layanan google yang menyediakan _free hosting_, bernama [Firebase](https://firebase.github.com). Tentu saja saya sekita lanjut mencobanya. Firebase membuat saya teringat dengan **github.io** dan **heroku**, kemudahan dalam membuat web dari static html di github dan layanan database, storage, _cloud function_, _authentication_ di heroku.
 
 Saya dengan cepat bisa menggunakan firebase, namun _at some point_, melakukan modifikasi data dengan langsung membuka database _kinda tiring and bug prone_. Jadi, hal berikutnya yang saya lakukan ialah segera mencari sebuah CMS (Content Management System) yang bisa di integrasi kedalam firebase. [Flamelink](https://flamelink.io) adalah jawaban dari pencarian saya. Namun selama mengerjakan web, saya menemukan banyak kesulitan dalam menggunakan SDK flamelink. Dokumentasi yang kurang dan sdk yang belum mature membuat saya kehilangan semangat mengerjakan web pribadi. Tutorial penggunaan firebase dan flamelink akan saya tulis di blog post berikutnya.
 
@@ -51,7 +50,7 @@ Tak mau rugi, maka saya mencari opsi yang paling simpel dalam membuat web. Kalau
 - Support,
 - Kemudahan backup, dll,
 
-Saya akhirnya memilih [Wordpress](https://wordpress.org/). Permasalahannya, wordpress merupakan sebuah web app, tidak dapat di deploy di tempat hosting static web. Untuk menggunakannya saya perlu berlangganan shared hosting, VPS(virtual private server), ataupun Container pod. Range harga layanan ini mulai dari Rp.10 rb hingga ratusan ribu per bulan. Untuk yang murah, size host yang ditawarkan menurut saya terlalu kecil, sedangkan yang mahal, yaahhh **MAHAL** 😂. Sampai akhirnya saya menemukan sebuah video [youtube](https://www.youtube.com/watch?v=vIJdypOqlL4) yang menjelaskan cara untuk mendeploy Wordpress di [GCP](https://cloud.google.com/) (Google Cloud Platform) dengan harga **\$0** (baca: gratis). Yang menarik dengan harga \$0 itu saya mendapatkan resource yg sama (bahkan terkadang lebih) daripada low tier shared host. Walaupun sama-sama kecil tapi gratis, mudah diintegrasi dengan produk lain google, jaringan CDN di seluruh dunia, rasanya _it's a no brainer choice_. Setup mengikuti step by step dari video sebelumnya, lalu membeli template, install, klik, klik, klik... and _its done_.
+Saya akhirnya memilih [Wordpress](https://wordpress.org/). Permasalahannya, wordpress merupakan sebuah web app, tidak dapat di deploy di tempat hosting static web. Untuk menggunakannya saya perlu berlangganan shared hosting, compute engine/vps, ataupun Container pod. Range harga layanan ini mulai dari Rp.10 rb hingga ratusan ribu per bulan. Untuk yang murah, size host yang ditawarkan menurut saya terlalu kecil, sedangkan yang mahal, yaahhh **MAHAL** 😂. Sampai akhirnya saya menemukan sebuah video [youtube](https://www.youtube.com/watch?v=vIJdypOqlL4) yang menjelaskan cara untuk mendeploy Wordpress di [GCP](https://cloud.google.com/) (Google Cloud Platform) dengan harga **\$0** (baca: _gratis_). Yang menarik dengan harga \$0 itu saya mendapatkan resource yg sama (bahkan terkadang lebih) daripada low tier shared host. Walaupun sama-sama kecil tapi gratis, mudah diintegrasi dengan produk lain google, jaringan CDN di seluruh dunia, rasanya _it's a no brainer choice_. Setup mengikuti step by step dari video sebelumnya, lalu membeli template, install, klik, klik, klik... and _its done_.
 
 ### Kelebihan
 
