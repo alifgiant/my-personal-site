@@ -9,6 +9,7 @@ backend:
     deleteMedia: '[skip ci] Delete “{{path}}”'
 
 # site_url: https://alifakbar.netlify.app
+# logo_url: https://your-site.com/images/logo.svg
 
 # when using a custom proxy server port
 local_backend:

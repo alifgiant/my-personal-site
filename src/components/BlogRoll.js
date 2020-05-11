@@ -140,7 +140,12 @@ export default ({ categoryFilter, tagFilter }) => {
                 categories
                 featuredimage {
                   childImageSharp {
-                    fluid(maxWidth: 1200, maxHeight: 300, quality: 100) {
+                    fluid(
+                      maxWidth: 1200
+                      maxHeight: 490
+                      cropFocus: CENTER
+                      quality: 100
+                    ) {
                       ...GatsbyImageSharpFluid
                     }
                   }
