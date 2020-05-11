@@ -19,11 +19,6 @@ const TemplateWrapper = ({ children }) => {
         <meta property="og:image" content={`${withPrefix("/")}favicon.png`} />
         <script
           defer
-          src="https://cdn.jsdelivr.net/npm/uikit@3.4.4/dist/js/uikit.min.js"
-          crossorigin="anonymous"
-        />
-        <script
-          defer
           src="https://kit.fontawesome.com/ad68aef9c2.js"
           crossorigin="anonymous"
         />
