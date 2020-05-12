@@ -31,7 +31,7 @@
         "netlify-cms-proxy-server": "^1.2.6"
     },
     "scripts": {
-        "build": "GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build --log-pages"
+        "build": "GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build --log-pages",
         "develop": "gatsby develop",
         "start": "npm run develop",
         "serve": "gatsby serve",
