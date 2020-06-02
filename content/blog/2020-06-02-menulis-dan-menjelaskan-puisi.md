@@ -29,8 +29,6 @@ Jadi, di post ini saya akan jelaskan terkait puisi yang berjudul "[Istana Pasir]
 
 Benarkah demikan? Mari kita menuju pembahasan
 
-![Page 1](./images/uploads/istana-page-1.jpg)
-
 ## Pembahasan
 
 Puisi ini tergolong sebuah syair dengan sajak 'i' dan mengambil pendekatan naturalis, atau "kondisi nyata/alam". Jadi makna yang mau diungkapkan perlu digambarkan kepada sebuah objek nyata yang orang kenali. Pusing? Haha daripada teori langsung saja ke penjelasannya ya. 
