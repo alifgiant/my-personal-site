@@ -24,12 +24,29 @@ Sudah sempat disebutkan tadi, ada beberapa orang yang tidak paham. Bahkan ada yg
 
 ## Isi Puisi
 
-Jadi, di post ini saya akan jelaskan terkait puisi yang berjudul "[Istana Pasir](https://www.instagram.com/p/CAmVmffpm-P)". Silahkan baca dulu.
+Jadi, di post ini saya akan jelaskan terkait puisi yang berjudul "[Istana Pasir](https://www.instagram.com/p/CAmVmffpm-P)". Silahkan baca dulu. Kenapa puisi ini saya pilih untuk dibahas, karena ini yang beberapa orang mengaku sama sekali tidak paham. Bahkan ada yang bilang, 
+> "Puisi ini kamu cuma seperti nuntun orang tanya jalan. Tapi cuma sampai perempatan. Terus ga ngasih tau belok kemana. Ditinggal begitu aja."
+
+Benarkah demikan? Mari kita menuju pembahasan
 
 ![](/images/uploads/istana-page-1.jpg "page-1")
 
-## Penjelasan
+## Pembahasan
 
-Puisi ini tergolong sebuah syair dengan sajak 'i' dan mengambil pendekatan naturalis, atau "kondisi nyata/alam". Pusing? Haha daripada teori langsung saja ke penjelasannya ya. So..
+Puisi ini tergolong sebuah syair dengan sajak 'i' dan mengambil pendekatan naturalis, atau "kondisi nyata/alam". Jadi makna yang mau diungkapkan perlu digambarkan kepada sebuah objek nyata yang orang kenali. Pusing? Haha daripada teori langsung saja ke penjelasannya ya. 
 
-1. Pertam
+Jadi, untuk memahami puisi di akun [@albrafik](https://instagram.com/albrafik) ada beberapa kesamaan _clue_ yaitu konteks akun dan judul puisi. Konteks disini ialah, akun ini tuh apa sih isinya? Sudah sangat jelas saya tuliskan, 
+
+> "Kisah cinta dalam puisi. Dari perdramaan masa kini."
+
+Berarti ya puisi ini ga jauh dari kisah cinta. Berikutnya, judul puisi, "Istana Pasir", objek satu ini biasanya dilihat dimana? sifatnya seperti apa?. Dia umumnya berada di pantai berpasir. Membangun istana pasir merupakan sebuah aktivitas yang hampir semua orang pernah lakukan. Tapi tidak semuanya berhasil membuat istana pasir yang keren. Gimana, sejauh ini sudah lebih paham 😏?
+
+Mari kita bahas perbait.
+
+```
+Ada 2 cara menghancurkan istana pasir.
+Kering, air menguap dari terik sinar mentari.
+Pasir menjadi debu gugur ditiup angin.
+Atau basah, hempas ombak yang menari.
+Pasir hilang larut dalam emosi.
+```
