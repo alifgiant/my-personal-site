@@ -50,3 +50,29 @@ Pasir menjadi debu gugur ditiup angin.
 Atau basah, hempas ombak yang menari.
 Pasir hilang larut dalam emosi.
 ```
+
+Diawali dengan saya menjelaskan cara hancur nya objek ini. Jika diamati di kondisi nyata, di pantai, sering kali ada 2 penyebab istana pasir rusak yaitu kurang basah sehingga rentan retak dan tersapu ombak. Kedua kejadian ini digambarkan di baris 2 dan 4. Akibat langsung dari kejadian ini digambarkan di baris 3 dan 5. 
+
+> "lif, itu sih gua paham. Lu mau ngomong apa sih?"
+
+Sabar, disini clue pertama berfungsi. Puisi ini pasti tentang percintaan. Lalu, apakah yang digunakan untuk menggambarkan cinta, percintaan, atau kisah cinta? Yap, tepat sekali, "Istana Pasir". Lebih tepatnya, pasir menggambarkan cinta, dan istana adalah sesuatu yang bisa dibangun dengan cinta. Apakah itu? ya tergantung kamu, ingin bangun apa dengan kisah cinta mu 😏.
+
+Lanjut, bait ke-dua.
+
+```
+Tapi semua tau pasti.
+Tak pernah mudah tuk dijalani,
+Membangun Istana dari pasir.
+Semua tau pasti,
+Tak ada yg murah, istana yang telah berdiri.
+```
+
+Seharusnya disini sudah lebih mudah dipahami. Kita cukup mengganti kata istana dan pasir, ke tujuan dan cinta. Jadi kurang lebih disini maksudnya
+
+> "Hei! semua juga tau, susah membangun komitmen, eh cinta (maaf keceplosan 😉). Sabarlah semua berproses, kita bisa nikmati hasilnya setelah semua selesai. Proses ini ga ada yang mudah. Bahkan tidak jarang, mahal."
+
+Begitulah. Pesan yang ingin disampaikan di puisi ini. Semoga yang baca jadi bisa mengerti 😜.
+
+---
+Sekian dan terimakasih.
+Sampai berjumpa di blog post berikutnya.
