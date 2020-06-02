@@ -29,7 +29,7 @@ Jadi, di post ini saya akan jelaskan terkait puisi yang berjudul "[Istana Pasir]
 
 Benarkah demikan? Mari kita menuju pembahasan
 
-![Page 1](/images/uploads/istana-page-1.jpg)
+![Page 1](./istana-page-1.jpg)
 
 ## Pembahasan
 
