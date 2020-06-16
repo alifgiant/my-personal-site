@@ -49,4 +49,4 @@ iPad memang merupakan tablet dengan spek dewa, tapi _quality comes with a price_
 
 Iyaa, sabar, di post berikutnya yah.. biar ga kepanjangan wkwk.
 
-[Lanjut ke part 2](/blog/2020-06-16-flutter-x-vs-code-server-mobile-developer-part-1-2)
+[Lanjut ke part 2](/blog/2020-06-16-flutter-x-vs-code-server-mobile-developer-part-2)
