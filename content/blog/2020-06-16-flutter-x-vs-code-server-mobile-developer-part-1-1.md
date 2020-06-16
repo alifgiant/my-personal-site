@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
-date: 2020-06-16T11:56:21.147Z
-hidepost: true
+date: 2020-06-16T14:20:29.686Z
+hidepost: false
 title: Flutter x VS Code Server = "Mobile" Developer (PART-1)
 description: Mobile developer kini bisa lebih bebas dari keterbatasan platform
   dan tempat. Hal yang selama ini menjadi kelebihan utama web developer.
@@ -49,4 +49,4 @@ iPad memang merupakan tablet dengan spek dewa, tapi _quality comes with a price_
 
 Iyaa, sabar, di post berikutnya yah.. biar ga kepanjangan wkwk.
 
-[Lanjut]([Lanjut ke part 2](/blog/2020-05-8-my-journey-on-creating-personal-website-full-code-untill-configuration-magic-part-2))
+[Lanjut ke part 2](/blog/2020-06-16-flutter-x-vs-code-server-mobile-developer-part-1-2)
