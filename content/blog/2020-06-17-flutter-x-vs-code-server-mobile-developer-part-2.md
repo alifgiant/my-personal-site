@@ -81,7 +81,6 @@ $ sudo apt-get install git
 5. Enable alias untuk command "ll". Untuk mempermudah melihat isi directory
 ```bash
 $ sudo nano .bashrc
-
 alias ll='ls -lAF'
 ```
 
@@ -93,11 +92,10 @@ $ sudo chmod 600 /swapfile
 $ sudo mkswap /swapfile
 $ sudo swapon /swapfile
 $ sudo nano /etc/fstab
-
+# copy paste line berikut ke baris terakhir
 /swapfile swap swap defaults 0 0
-
 $ sudo nano mount -a
-```
+```bash
 
 7. Pastikan swap telah muncul sebesar 1GB dengan menjalankan htop
 ```bash
