@@ -50,7 +50,7 @@ $ tar xf ~/flutter_linux_1.17.3-stable.tar.xz
 ```
 
 4. Setup path agar bisa mengakses flutter binary secara global
-```
+```bash
 $ cd ~/
 $ sudo nano .bashrc
 # copy line berikut ke paling bawah file
@@ -60,6 +60,7 @@ $ flutter doctor
 ```
 
 5. Sampai langkah ke 4 tadi, sebenarnya instalasi flutter telah selesai tapi kita perlu melanjutkan instalasi untuk mengaktifkan mode development web di flutter. Setelah menyelesaikan langkah ini, kamu akan melihat opsi target build `Web Server • web-server • web-javascript • Flutter Tools`
+
 ```bash
 $ flutter channel beta
 $ flutter upgrade
