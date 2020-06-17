@@ -71,7 +71,7 @@ $ flutter doctor
 
 Langkah 5 diatas adalah akhir dari proses instalasi. Kita dapat menjalankan aplikasi flutter (baik existing maupun _project_ baru) sebagai web server, yang mana akan memiliki sebuah port. Perlu di ingat jika menjalankan existing project tidak semua library dapat digunakan perlu dilakukan modifikasi mocking seperti yang disebutkan diatas.
 
-Tapi.. jika kalian perhatikan port yang akan diberikan sistem selalu berubah setiap kali kalian menjalankan
+Tapi.. jika kalian perhatikan, port yang diberikan sistem, selalu berubah setiap kali kalian menjalankan
 
 ```bash
 $ flutter run
