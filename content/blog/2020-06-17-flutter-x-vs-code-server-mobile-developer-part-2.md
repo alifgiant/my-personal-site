@@ -95,7 +95,7 @@ $ sudo nano /etc/fstab
 # copy paste line berikut ke baris terakhir
 /swapfile swap swap defaults 0 0
 $ sudo nano mount -a
-```bash
+```
 
 7. Pastikan swap telah muncul sebesar 1GB dengan menjalankan htop
 ```bash
@@ -130,10 +130,10 @@ $ sudo nano /etc/caddy/Caddyfile
 # subdomain vscode berfungsi untuk mengakses code-server
 # subdomain flutter untuk mengakses hasil run dari flutter
 vscode.mydomain.com {
-  reverse_proxy 127.0.0.1:8080
+    reverse_proxy 127.0.0.1:8080
 }
 flutter.mydomain.com {
-  reverse_proxy localhost:3600
+    reverse_proxy localhost:3600
 }
 ```
 
@@ -148,6 +148,7 @@ Sepertinya bagian yang ini kalian sudah sangat paham. Karena jika kalian punya d
 | -------- | ----------- | --- | -------- |
 | vscode   | A           | 5m  | copas ip |
 | flutter  | A           | 5m  | copas ip |
+
 5. Walaupun muncul diminta menunggu 48 jam, jika kalian menggunakan DNS google, cukup menunggu sekitar 5-10 menit saja.
 
 ----
