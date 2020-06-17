@@ -81,7 +81,6 @@ $ sudo apt-get install git
 5. Enable alias untuk command "ll". Untuk mempermudah melihat isi directory
 ```bash
 $ sudo nano .bashrc
-
 alias ll='ls -lAF'
 ```
 
@@ -93,11 +92,10 @@ $ sudo chmod 600 /swapfile
 $ sudo mkswap /swapfile
 $ sudo swapon /swapfile
 $ sudo nano /etc/fstab
-
+# copy paste line berikut ke baris terakhir
 /swapfile swap swap defaults 0 0
-
 $ sudo nano mount -a
-```
+```bash
 
 7. Pastikan swap telah muncul sebesar 1GB dengan menjalankan htop
 ```bash
@@ -125,7 +123,8 @@ $ echo "deb [trusted=yes] https://apt.fury.io/caddy/ /" \
 $ sudo apt update
 $ sudo apt install caddy
 $ sudo nano /etc/caddy/Caddyfile
-
+```
+```
 # hapus semua tulisan yang sudah ada dan ganti menjadi
 # ganti tulisan _mydomain.com_ menjadi nama domain anda
 # subdomain vscode berfungsi untuk mengakses code-server
@@ -133,7 +132,6 @@ $ sudo nano /etc/caddy/Caddyfile
 vscode.mydomain.com {
   reverse_proxy 127.0.0.1:8080
 }
-
 flutter.mydomain.com {
   reverse_proxy localhost:3600
 }
