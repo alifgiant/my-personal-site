@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 date: 2020-06-17T03:12:38.961Z
-hidepost: true
+hidepost: false
 title: Flutter x VS Code Server = "Mobile" Developer (PART-2)
 description: Mobile developer kini bisa lebih bebas dari keterbatasan platform
   dan tempat. Hal yang selama ini menjadi kelebihan utama web developer.
