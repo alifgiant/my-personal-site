@@ -82,6 +82,7 @@ $ sudo apt-get install git
 ```bash
 $ sudo nano .bashrc
 alias ll='ls -lAF'
+$ sudo source .bashrc
 ```
 
 6. Setup swap file sebesar 1 GB. Apa itu swap file? google aja..
