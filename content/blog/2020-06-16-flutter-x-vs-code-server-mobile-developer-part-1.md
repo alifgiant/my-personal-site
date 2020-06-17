@@ -49,4 +49,4 @@ iPad memang merupakan tablet dengan performa dewa, tapi _quality comes with a pr
 
 Iyaa, sabar, di post berikutnya yah.. biar ga kepanjangan wkwk.
 
-[Lanjut ke part 2](/blog/2020-06-16-flutter-x-vs-code-server-mobile-developer-part-2)
+[Lanjut ke part 2](/blog/2020-06-17-flutter-x-vs-code-server-mobile-developer-part-2)
