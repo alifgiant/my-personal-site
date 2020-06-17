@@ -123,7 +123,8 @@ $ echo "deb [trusted=yes] https://apt.fury.io/caddy/ /" \
 $ sudo apt update
 $ sudo apt install caddy
 $ sudo nano /etc/caddy/Caddyfile
-
+```
+```
 # hapus semua tulisan yang sudah ada dan ganti menjadi
 # ganti tulisan _mydomain.com_ menjadi nama domain anda
 # subdomain vscode berfungsi untuk mengakses code-server
@@ -131,7 +132,6 @@ $ sudo nano /etc/caddy/Caddyfile
 vscode.mydomain.com {
   reverse_proxy 127.0.0.1:8080
 }
-
 flutter.mydomain.com {
   reverse_proxy localhost:3600
 }
