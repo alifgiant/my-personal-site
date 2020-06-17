@@ -77,6 +77,7 @@ Tapi.. jika kalian perhatikan, port yang diberikan sistem, selalu berubah setiap
 ```bash
 $ flutter run
 ```
+
 Lantas apa gunanya kita melakukan setup DNS dilangkah sebelumnya? bukannya kita ingin build ini berada port 3600? Cukup mudah, kalian perlu menambahkan opsi run menjadi:
 
 ```bash
