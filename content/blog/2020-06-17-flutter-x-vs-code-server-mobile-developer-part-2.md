@@ -144,20 +144,20 @@ Sepertinya bagian yang ini kalian sudah sangat paham. Karena jika kalian punya d
 3. Ke halaman pengaturan DNS dari domain kalian
 4. Buat sebuah A Record dengan host vscode dan flutter menuju alamat IP yang sudah di copy.
 
-| hostname | record type | TTL |  Data    |
-| -------- | ----------- | --- | -------- |
-| vscode   | A           | 5m  | copas ip |
-| flutter  | A           | 5m  | copas ip |
+| hostname | record type | Time To Live (TTL) |     Data        |
+| -------- | ----------- | ------------------ | --------------- |
+| vscode   | A           | 5m                 | copas ip disini |
+| flutter  | A           | 5m                 | copas ip disini |
 
-5. Walaupun muncul diminta menunggu 48 jam, jika kalian menggunakan DNS google, cukup menunggu sekitar 5-10 menit saja.
+5. Walaupun muncul tulisan kamu diminta menunggu 48 jam, jika kalian menggunakan DNS google, cukup menunggu sekitar 5-10 menit saja.
 
 ----
 
-Sampai sejauh ini, kalian sudah dapat menggunakan VS Code di browser dengan membuka vscode.mydomain.com di browser kalian. Jika belum muncul silahkan coba tunggu beberapa menit lalu coba refresh. Bisa jadi juga halaman putih tapi sebenarnya hanya loading untuk memunculkan halaman vscode. Hal ini bisa kalian cek dengan memastikan apakah favicon sudah muncul.
+Sampai sejauh ini, kalian sudah dapat menggunakan VS Code di browser dengan membuka [vscode.mydomain.com](vscode.mydomain.com) di browser kalian. Jika belum muncul silahkan coba tunggu beberapa menit lalu coba refresh. Bisa jadi juga, halaman putih tapi sebenarnya hanya loading untuk memunculkan halaman vscode, cukup tunggu beberapa detik. Hal ini bisa kalian cek dengan memastikan apakah _favicon_ sudah muncul.
 
 ## Instalasi Flutter
-Ini bagian penutup dan paling mudah, seperti nya tidak perlu tutorial kan.. ? 🤓
-Iya, iya, saya buatin tutorialnya di next post yaa..
+Ini bagian penutup dan paling mudah, seperti nya tidak perlu tutorial kan.. 🤓?
+Iya, iya.., saya buatin tutorialnya di next post yaa..
 
 
 [Lanjut ke part 3](/blog/2020-06-17-flutter-x-vs-code-server-mobile-developer-part-3)
