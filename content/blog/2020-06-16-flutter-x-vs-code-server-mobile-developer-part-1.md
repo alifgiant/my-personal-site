@@ -21,7 +21,11 @@ tags:
 # Cerita dulu dikit, Santai.. Jangan buru buru, awas nabrak..
 Sebagai seorang developer, ada satu benda yang hampir selalu dibawa setiap kali berpergian. Ya benar sekali, laptop.. Sering kali dibawa meskipun tidak jarang berakhir tidak dibuka. Ingin rasanya ditinggal aja dirumah tapi.. takut klo ada _ide_ ngoding malah jadi ga bisa kerja. Lumayan sering liat _developer web_ laptopnya ringan, kecil, murah #eh jadi bikin iri 🤣. Sebenarnya bisa saja kita (mobile developer) beli laptop yg sama, dengan asumsi kita tidak _ngoding_ app untuk ios / iPad (karena harus pakai mac dan mac = **MUAHALL**). Tapi, _minimum requirement_ dari Android Studio sudah cukup bikin ngelus dada 🥺. Alhasil kita stuck di laptop besar atau berat atau mahal 😔.
 
-Waktu berjalan, jaman berubah, mindset orang orang mulai berganti menjadi "_mobile first_". Teknologi pun mengikuti, muncul banyak sekali framework, tools dan lain sebagainnya untuk mempermudah membangun aplikasi atau terlihat seperti aplikasi "mobile". Salah satu yang ikut memeriahkan perkembangan teknologi ini ialah _Flutter_. Dari penjelasan di website resminya "Flutter is Google’s UI toolkit for building beautiful, natively compiled applications for mobile, web, and desktop from a single codebase", terlihat jelas flutter menarget hampir semua platform dan "_truly_" single code base. Selain itu di tahun 2018, apple meluncurkan iPad pro untuk pertama kali dengan spesifikasi "dewa" yang memulai _promise_ mobile computing dengan tenaga besar. Hingga tahun ini, 2020, muncul tag line "Your new computer is not a computer".
+Waktu berjalan, jaman berubah, mindset orang orang mulai berganti menjadi "_mobile first_". Teknologi pun mengikuti, muncul banyak sekali framework, tools dan lain sebagainnya untuk mempermudah membangun aplikasi atau terlihat seperti aplikasi "mobile". Salah satu yang ikut memeriahkan perkembangan teknologi ini ialah _Flutter_. Dari penjelasan di website resminya 
+
+> "Flutter is Google’s UI toolkit for building beautiful, natively compiled applications for mobile, web, and desktop from a single codebase"
+
+terlihat jelas flutter menarget hampir semua platform dan "_truly_" single code base. Selain itu di tahun 2018, apple meluncurkan iPad pro untuk pertama kali dengan spesifikasi "dewa" yang memulai _promise_ mobile computing dengan tenaga besar. Hingga tahun ini, 2020, muncul tag line "Your new computer is not a computer".
 
 ## React dan Flutter ❤️
 
