@@ -19,7 +19,7 @@ socmed:
     url: https://github.com/alifgiant
     icon: fab fa-github
   - name: Email
-    url: mailto:muh.alifgiant@gmail.com
+    url: mailto:hello@alifakbar.com
     icon: far fa-envelope
   # - name: Telegram
   #   url: telegram:@alifgiant
