@@ -4,7 +4,7 @@ image_url: https://www.gravatar.com/avatar/6f16a13c13154a4060cd0a9c88e9b078?s=20
 full_name: Muhammad Alif Akbar
 description: Blog of whom love to learn new things and challenge himself.
 motto: '"Non est ad astra mollis e terris via" -Seneca'
-cv: "https://www.notion.so/Curriculum-Vitae-b20c4204b40c47b0b0cf4f07230e4a7d"
+cv: "https://bit.ly/cv-alifakbar"
 socmed:
   - name: Facebook
     url: https://fb.com/m.alif.akbar
