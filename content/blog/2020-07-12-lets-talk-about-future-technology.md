@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-date: 2020-07-12T06:29:52.680Z
+date: 2020-07-12T11:21:28.713Z
 hidepost: false
 title: "Let's talk about future: Technology"
 description: Akhir akhir ini dunia sedang berputar sangat cepat. Berbagai bidang
